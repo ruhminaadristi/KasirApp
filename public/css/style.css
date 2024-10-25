@@ -99,3 +99,43 @@ input[type="password"]::-webkit-input-placeholder,
 select::-webkit-input-placeholder {
     color: #000; /* Warna teks hitam */
 }
+
+body, .wrapper {
+    background-color: #ffffff; /* Ubah menjadi putih */
+    color: #000000; /* Ubah warna teks menjadi hitam */
+}
+
+/* Ubah warna latar belakang untuk elemen-elemen lain jika diperlukan */
+.main-sidebar, .main-header, .content-wrapper, .main-footer {
+    background-color: #ffffff;
+}
+
+/* Sesuaikan warna teks dan border untuk kontras yang lebih baik */
+.nav-link, .brand-link, .info {
+    color: #000000;
+}
+
+.card {
+    background-color: #f8f9fa; /* Warna latar sedikit lebih gelap untuk card */
+    border: 1px solid #dee2e6;
+}
+
+/* Sesuaikan warna untuk tabel */
+.table {
+    color: #000000;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0,0,0,.05);
+}
+
+/* Sesuaikan warna untuk tombol jika diperlukan */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
