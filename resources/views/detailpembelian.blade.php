@@ -95,7 +95,7 @@
                                     @foreach ($data as $detailpembelian)
                                     <tr>
                                         <th> {{ $no++ }}</th>
-                                        <td>{{ $detailpembelian->barang->namaBarang }}</td>
+                                        <td>{{ $detailpembelian->barang ? $detailpembelian->barang->namaBarang : 'Barang Tidak Ada' }}</td>
                                         <td>{{ number_format($detailpembelian->jumlah, 0, ',', '.') }}</td>
                                         <td>{{ number_format($detailpembelian->harga, 0, ',', '.') }}</td>
                                         <td>{{ number_format($detailpembelian->subTotal, 0, ',', '.') }}</td>
@@ -214,7 +214,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    Apakah Anda yakin ingin menghapus "{{ $pembelian->barang->namaBarang }}" ini?
+                    Apakah Anda yakin ingin menghapus "{{ $pembelian->barang ? $pembelian->barang->namaBarang: 'Barang Tidak Ada' }}" ini?
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>

@@ -15,7 +15,8 @@
     <!-- Link to Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="/AdminLTE-3.2.0/plugins/fontawesome-free/css/all.min.css">
 
@@ -25,26 +26,26 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark" data-bs-theme="dark">
-        <div class="container">
-            <p class="navbar-brand mb-0 h1">Webkasirku</p>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #7AB2D3; height: 75px">
+        <div class="container ">
+            <p class="navbar-brand h1 text-white fs-2 fw-bold">Kasir UMKM Yogyakarta</p>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo02">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-3 mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link{{ ($title === "Home")?' active':'' }}" aria-current="page" href="/">Home</a>
+                        <a class="text-white nav-link{{ ($title === "Home")?' active':'' }}" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ ($title === "About")?' active':'' }}" href="/about">Tentang</a>
+                        <a class="text-white nav-link {{ ($title === "About")?' active':'' }}" href="/about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ ($title === "Contact Us")?' active':'' }}" href="/contact">Hubungi Kami</a>
+                        <a class="text-white nav-link {{ ($title === "Contact Us")?' active':'' }}" href="/contact">Contact Us</a>
                     </li>
                 </ul>
-                <button class="btn btn-dark" type="submit"><a href="/login"  class="text-decoration-none text-white">Login</a></button>
+                <button class="btn" style="background-color: #608BC1;"><a href="/login" class="text-decoration-none text-white">Login</a></button>
             </div>
         </div>
     </nav>

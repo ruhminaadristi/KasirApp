@@ -201,7 +201,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    Apakah Anda yakin ingin menghapus "{{ $retur->barang->namaBarang }}" ini?
+                    Apakah Anda yakin ingin menghapus "{{ $retur->barang ? $retur->barang->namaBarang : 'Barang Tidak Ada' }}" ini?
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>

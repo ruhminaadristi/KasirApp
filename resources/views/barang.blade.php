@@ -81,7 +81,7 @@
                                     @foreach ($data as $barang)
                                     <tr>
                                         <th> {{ $no++ }}</th>
-                                        <td>{{ $barang->categori->namaCategori }}</td>
+                                        <td>{{ $barang->categori ? $barang->categori->namaCategori : 'Kategori Tidak Ada' }}</td>
                                         <td>{{ $barang->namaBarang }}</td>
                                         <td>{{ $barang->kodeBarang }}</td>
                                         <td>{{ number_format($barang->hargaBeli, 0, ',', '.') }}</td>

@@ -31,7 +31,7 @@
                                     <h3 class="card-title">Data Karyawan Toko</h3>
                                 </div>
                                 <div class="col-auto">
-                                    <a href="/tambahkaryawan" class="btn btn-success btn-md">Tambah</a>
+                                    <a href="/tambahkaryawan" class="btn btn-info btn-md">Tambah</a>
                                 </div>
                                
                             </div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Laporan Penjualan - Toko Kamto</title>
+    <title>Laporan Penjualan - Kasir UMKM</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -32,10 +32,10 @@
         <div class="row justify-content-center">
             <div class="col-md-10">
                 <div class="text-center">
-                    <h3 class="mt-4 mb-4">Laporan {{ $title }} - Toko Kamto</h3>
+                    <h3 class="mt-4 mb-4">Laporan {{ $title }} - Kasir UMKM </h3>
           
                     <div class="address">
-                        <p>Dsn. Brangkal Ds. Kedungpanji, Kec. Lembeyan, Kabupaten Magetan, Jawa Timur 63372</p>
+                        <p>Jl. Lowanu No.34-33, Sorosutan, Kec. Umbulharjo, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55153</p>
                         <p>{{$tanggalawal->format('d-m-Y') }} - {{ $tanggalakhir->format('d-m-Y') }}</p>
                     </div>
                 </div>
@@ -58,7 +58,7 @@
                             <tr>
                                 <td>{{ $i++ }}</td>
                                 <td>{{ $report->created_at->format('d-m-Y')}}</td>
-                                <td>{{ $report->barang->namaBarang }}</td>
+                                <td>{{ $report->barang ? $report->barang->namaBarang: 'Barang Tidak Ada' }}</td>
                                 <td>{{ $report->jumlah }}</td>
                                 <td>Rp {{ number_format($report->harga, 0, ',', '.') }}</td>
                                 <td>Rp {{ number_format($report->subTotal, 0, ',', '.') }}</td>
